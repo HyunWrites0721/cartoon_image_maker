@@ -52,9 +52,9 @@ while True:
     key = cv.waitKey()
     if key == 27:
         break
-    elif key == ord('+') or ord('='):
+    elif key == ord('+') or key == ord('='):
         img_index = (img_index + 1) % len(img_list)
-    elif key == ord('-') or ord('_'):
+    elif key == ord('-') or key == ord('_'):
         img_index = (img_index -1) % len(img_list)
     
 cv.destroyAllWindows()
